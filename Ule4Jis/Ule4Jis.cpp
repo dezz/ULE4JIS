@@ -54,32 +54,25 @@ BOOL Ule4JisApp::InitInstance()
 	// 設定が格納されているレジストリ キーを変更します。
 	// TODO: 会社名または組織名などの適切な文字列に
 	// この文字列を変更してください。
-//	SetRegistryKey(_T("アプリケーション ウィザードで生成されたローカル アプリケーション"));
+	//	SetRegistryKey(_T("アプリケーション ウィザードで生成されたローカル アプリケーション"));
 
 	// prevent multiple boot
-	::CreateMutex(NULL, TRUE, m_pszExeName);
-	if (::GetLastError() == ERROR_ALREADY_EXISTS) {
+	::CreateMutex(nullptr, TRUE, m_pszExeName);
+	if (GetLastError() == ERROR_ALREADY_EXISTS)
+	{
 		CString msg;
 		msg.LoadString(IDS_MSG_MULTIPLE_BOOT_ERROR);
-		::MessageBox(NULL, msg, NULL, MB_OK | MB_ICONEXCLAMATION);
+		::MessageBox(nullptr, msg, nullptr, MB_OK | MB_ICONEXCLAMATION);
 		return FALSE;
 	}
 
-	Ule4JisDlg dlg;
-	m_pMainWnd = &dlg;
-	INT_PTR nResponse = dlg.DoModal();
-	if (nResponse == IDOK)
-	{
-		// TODO: ダイアログが <OK> で消された時のコードを
-		//  記述してください。
-	}
-	else if (nResponse == IDCANCEL)
-	{
-		// TODO: ダイアログが <キャンセル> で消された時のコードを
-		//  記述してください。
-	}
+	Ule4JisDlg* dlg = new Ule4JisDlg;
+	m_pMainWnd = dlg;
+	dlg->Create(IDD_ULE4JIS_DIALOG);
+	dlg->ShowWindow(SW_SHOW);
+	dlg->ShowWindow(SW_MINIMIZE);
+	dlg->ShowWindow(SW_HIDE);
+	CWinApp::Run();
 
-	// ダイアログは閉じられました。アプリケーションのメッセージ ポンプを開始しないで
-	//  アプリケーションを終了するために FALSE を返してください。
 	return FALSE;
 }

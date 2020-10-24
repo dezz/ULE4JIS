@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="gui">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pch">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="res">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{3e62e00a-7ded-400f-a8e3-5dbc0e1557ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\emulation">
+      <UniqueIdentifier>{1ae9901c-19bc-4b68-a255-4d9e22d1cc4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\strategy">
+      <UniqueIdentifier>{afa21207-16de-49c1-b6a9-7f0144b407a6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Constants.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Ule4Jis.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Ule4JisDlg.h">
+      <Filter>gui</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>pch</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>res</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyCondition.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyEmulator.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyHooker.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyHookEventArgs.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyHookEventListener.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="ScanCode.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="Emulation.h">
+      <Filter>core\emulation</Filter>
+    </ClInclude>
+    <ClInclude Include="NopEmulation.h">
+      <Filter>core\emulation</Filter>
+    </ClInclude>
+    <ClInclude Include="NormalKeyEmulation.h">
+      <Filter>core\emulation</Filter>
+    </ClInclude>
+    <ClInclude Include="PressAndReleaseDecorator.h">
+      <Filter>core\emulation</Filter>
+    </ClInclude>
+    <ClInclude Include="ShiftPressDecorator.h">
+      <Filter>core\emulation</Filter>
+    </ClInclude>
+    <ClInclude Include="ShiftReleaseDecorator.h">
+      <Filter>core\emulation</Filter>
+    </ClInclude>
+    <ClInclude Include="EmulationStrategy.h">
+      <Filter>core\strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="USonJISStrategy.h">
+      <Filter>core\strategy</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Ule4Jis.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="Ule4JisDlg.cpp">
+      <Filter>gui</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>pch</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyCondition.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyEmulator.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyHooker.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyHookEventArgs.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="NormalKeyEmulation.cpp">
+      <Filter>core\emulation</Filter>
+    </ClCompile>
+    <ClCompile Include="PressAndReleaseDecorator.cpp">
+      <Filter>core\emulation</Filter>
+    </ClCompile>
+    <ClCompile Include="ShiftPressDecorator.cpp">
+      <Filter>core\emulation</Filter>
+    </ClCompile>
+    <ClCompile Include="ShiftReleaseDecorator.cpp">
+      <Filter>core\emulation</Filter>
+    </ClCompile>
+    <ClCompile Include="USonJISStrategy.cpp">
+      <Filter>core\strategy</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Ule4Jis.ico">
+      <Filter>res</Filter>
+    </Image>
+    <Image Include="res\icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Ule4Jis.rc">
+      <Filter>res</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Ule4Jis.rc2">
+      <Filter>res</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>
